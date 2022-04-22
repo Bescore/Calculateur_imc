@@ -10,6 +10,24 @@
     <title>calculateur_IMC</title>
 </head>
 <body>
-    
+    <h2>Calculez votre IMC </h2>
+    <div class="container">
+        <div class="sub_contains">
+            <form action="" onsubmit="event.preventDefault()">
+                <label for="height">Votre taille (en cm)</label>
+                <input type="text" name="height" id="height"><br><br>
+                <label for="weight">Votre poids (en kg)</label>
+                <input type="text" name="weight" id="weight"><br><br>
+                <input type="submit" name="submit"  id="submit" value="JE CALCULE MON IMC">
+            </form>
+        </div>
+        <div id="results">
+            <p>Résultat</p>
+            <p class="result_text">Votre IMC (indice de masse corporelle) est de :</p>
+            <div id="nombre"></div>
+            <div id="conclusion"></div>
+        </div>
+        <div class="sign"></div>
+    </div>
 </body>
 </html>

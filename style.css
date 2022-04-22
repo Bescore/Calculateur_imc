@@ -1,0 +1,80 @@
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+h2 {
+	margin: 100px auto;
+	width: 70%;
+	color: red;
+}
+.container {
+	margin: 120px auto;
+	background-color: #ececea;
+	padding: 20px;
+	position: relative;
+}
+#submit {
+	margin: 0 40%;
+	background-color: #f6303e;
+	color: #f3f3f3;
+	border: 0.5px solid;
+	padding: 10px;
+}
+#results {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #f3f3f3;
+	visibility: hidden;
+	padding: 20px;
+}
+.result_text {
+	color: #a7a7a5;
+}
+#nombre {
+	font-size: 30px;
+	text-align: center;
+	color: #f6303e;
+}
+#conclusion {
+	color: #f6303e;
+	font-size: 0.9em;
+	margin-top: 6px;
+}
+@media all and (min-width: 320px) and (max-width: 426px) {
+	.container {
+		width: 300px;
+		margin: auto;
+	}
+	form input[type="text"] {
+		width: 250px;
+	}
+}
+@media all and (min-width: 426px) and (max-width: 768px) {
+	.container {
+		width: 100%;
+		margin: 120px auto;
+	}
+	form input[type="text"] {
+		width: 250px;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.container {
+		display: block;
+		width: 40%;
+		margin: 120px auto;
+	}
+	form input[type="text"] {
+		width: auto;
+	}
+	h2 {
+		margin: 100px auto;
+		width: 40%;
+		color: red;
+	}
+}
