@@ -8,7 +8,7 @@ $( "#submit" ).click( function () {
 
     function spawnResult () {
         $( '#results' ).css( { "visibility": "visible", } )
-        setTimeout( () => { $( '#results' ).css( { "visibility": "hidden", } ) }, 5000 )
+        setTimeout( () => { $( '#results' ).css( { "visibility": "hidden", } ) }, 6000 )
         $( '#nombre' ).text( resultat )
     }
     function typeText ( text ) {
