@@ -5,7 +5,6 @@ $( "#submit" ).click( function () {
     var calcul = ( weight ) / ( ( height / 100 ) * ( height / 100 ) );
     var resultat = Math.round( calcul * 10 ) / 10;
     console.log( resultat );
-
     function spawnResult () {
         $( '#results' ).css( { "visibility": "visible", } )
         setTimeout( () => { $( '#results' ).css( { "visibility": "hidden", } ) }, 6000 )
@@ -14,7 +13,6 @@ $( "#submit" ).click( function () {
     function typeText ( text ) {
         $( '#conclusion' ).text( text )
     }
-
     if ( resultat < 18.5 ) {
         spawnResult()
         typeText( "IMC < 18,5 kg/m² : insuffisance pondérale" )
@@ -24,11 +22,9 @@ $( "#submit" ).click( function () {
     } else if ( 25 < resultat && resultat < 29, 9 ) {
         spawnResult()
         typeText( "25 < IMC < 29,9 : surpoids" )
-
     } else if ( resultat > 30 ) {
         spawnResult()
         typeText( "IMC > 30 : obésité" )
-
     }
 
 
